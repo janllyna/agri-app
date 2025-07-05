@@ -1,0 +1,210 @@
+.bg{
+    background-color: beige;
+}
+.layout{
+    background-image: url('agriBg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 80vh;
+}
+.topBar{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.logo{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 50px;
+}
+.logoImg{
+    border-radius: 50px;
+}
+.navBar{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-left: 50px;
+    margin-right: auto;
+    margin-top: 10px;
+}
+.navButton{
+    border: none;
+    padding: 10px;
+    background: none;
+    cursor: pointer;
+    color: white;
+}
+.navButton:hover{
+    transform: scale(1.1);
+}
+.contact{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.touch{
+    border-radius: 10px;
+    height: 40px;
+    border: none;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+}
+.call{
+    border: none;
+    border-radius: 10px;
+    color: orange;
+    background-color: white;
+    cursor: pointer;
+    height: 40px;
+}
+.call:hover,.touch:hover{
+    transform: scale(1.1);
+}
+#search{
+    border: none;
+    border-radius: 10px;
+    max-width: 40px;
+    max-height: 40px;
+    text-align: center;
+    font-size: 200%;
+    cursor: pointer;
+}
+#search:hover{
+    transform: scale(1.1);
+}
+.mainContent{
+    margin-top: 150px;
+}
+.smallTag{
+    background: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 10px;
+    border-color:yellow;
+    color: white;
+}
+.tagLine{
+    color: yellow;
+    margin-left: 10px;
+}
+.subTag{
+    margin-left: 10px;
+    color: white;
+}
+.features{
+    display: flex;
+    gap: 90px;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.featureCard{
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+}
+.featureHead{
+    color: green;
+}
+.featureDesc{
+    font-size: 12px;
+}
+.farmerImg{
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 80px;
+    border-radius: 20px;
+}
+.about{
+    display: flex;
+    gap: 10px;
+}
+.aboutText{
+    margin-right: 100px;
+    text-align: center;
+    margin-top: 70px;
+}
+.aboutTitle{
+    color: green;
+}
+.aboutHighlight{
+    background-color: orange;
+    width: 110px;
+    height: 100px;
+    border-radius: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.highlightText{
+    font-size: 10px;
+    color: white;
+}
+.highlightNum{
+    color: yellow;
+}
+.services{
+    background-color: olive;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+.servicesTop{
+    display: flex;
+    margin-left: 60px;
+}
+.buttons{
+    margin-left: 500px;
+    margin-top: 30px;
+}
+.servicesButton{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+.servicesTitle{
+    color: white;
+}
+.servicesCards{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-left: 100px;
+}
+.servicesImg{
+    height: 100px;
+}
+.services1{
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+}
+.services2{
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+}
+.services3{
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+}
+.servicesImg{
+    margin-top: 10px;
+    border-radius: 20px;
+}

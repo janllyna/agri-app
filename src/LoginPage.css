@@ -1,0 +1,133 @@
+.Layout{
+    color: olive;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: olive;
+}
+.middleLayout{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color:white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.loginDetails{
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    gap: 10px;
+    text-align: center;
+}
+.Details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+#email{
+    border-radius: 10px;
+    border-style: solid;
+    border-color: olive;
+    padding: 10px;
+    width: 200px;
+    outline-color: olive;
+}
+#password{
+    border-radius: 10px;
+    border-style: solid;
+    border-color: olive;
+    padding: 10px;
+    width: 200px;
+    outline-color: olive;
+}
+.otherOptions{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+}
+.forgotPassword{
+    font-size: 10px;
+    cursor: pointer;
+    padding: 5px;
+    color: olive;
+}
+.rememberButton{
+    font-size: 10px;
+}
+.actionButtons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Login{
+    background-color: olive;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    width: 170px;
+    cursor: pointer;
+}
+.socialLogin{
+    background-color: olive;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    width: 170px;
+    cursor: pointer;
+}
+.signUp{
+    background-color: olive;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    width: 170px;
+    cursor: pointer;
+}
+.Login:hover,.socialLogin:hover,.signUp:hover,.forgotPassword:hover{
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 769px) {
+    .Layout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        background-size: cover;
+        background-color: olive;
+        width: 170vh;
+    }
+    .middleLayout{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        width: 80%;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        margin-bottom:100%;
+    }
+    .loginImg{
+        width: 100%;
+        justify-content: center;
+        height: auto;
+    }
+    .loginDetails{
+        display: flex;
+        flex-direction: column;
+        margin-right: 30px;
+        gap: 10px;
+    }
+}

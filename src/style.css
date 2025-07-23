@@ -21,14 +21,16 @@
 }
 .logoImg{
     border-radius: 50px;
+    height: 50px;
 }
-.navBar{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    margin-left: 50px;
-    margin-right: auto;
-    margin-top: 10px;
+.navBar {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-left: 50px;
+  margin-right: auto;
+  margin-top: 10px;
+  align-items: center;
 }
 .navButton{
     border: none;
@@ -37,6 +39,13 @@
     cursor: pointer;
     color: white;
 }
+.navBar a.navButton {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+
 .navButton:hover{
     transform: scale(1.1);
 }
@@ -81,6 +90,7 @@
 }
 .mainContent{
     margin-top: 150px;
+    color: white;
 }
 .smallTag{
     background: none;
@@ -89,10 +99,6 @@
     margin-left: 10px;
     border-color:yellow;
     color: white;
-}
-.tagLine{
-    color: yellow;
-    margin-left: 10px;
 }
 .subTag{
     margin-left: 10px;
@@ -207,4 +213,1150 @@
 .servicesImg{
     margin-top: 10px;
     border-radius: 20px;
+}
+.cornImg{
+    height: 250px;
+}
+.productsContent{
+    display: flex;
+    gap: 150px;
+    margin-left: 150px;
+    align-items: center;
+    text-align: center;
+    color: green;
+}
+.productCardleft{
+    text-align: center;
+    width: 300px;
+}
+.productCardRight{
+    text-align: center;
+    width: 300px;
+}
+.productsTitle{
+    text-align: center;
+    color: olive;
+}
+.agriProdTitle{
+    color: goldenrod;
+}
+.qualityProdTitle{
+    color: goldenrod;
+}
+.vegProdTitle{
+    color: goldenrod;
+}
+.pureProdTitle{
+    color: goldenrod;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdownOption{
+    border: none;
+    cursor: pointer;
+    background-color: white;
+}
+.dropdownOption:hover{
+    transform: scale(1.1);
+}
+.dropdown-content {
+  background-color: white;
+  min-width: 160px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+.dropBtn{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.dropBtn:hover{
+    transform: scale(1.1);
+}
+.dropdown-content a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  border: none;
+}
+
+
+.Home2bg{
+    background-color: yellow;
+}
+.Home2layout{
+    background-image: url('tractor.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 80vh;
+}
+.Home2mainContent{
+    margin-top: 100px;
+    text-align: center;
+}
+.smallTag{
+    background: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 10px;
+    border-color:white;
+    color: white;
+    font-size: 10px;
+}
+.tagLine{
+    color: white;
+    margin-left: 10px;
+}
+.contentContact{
+    background-color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.infoStrip{
+    display: flex;
+    flex-direction: row;
+    gap: 620px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.caringContent{
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    color: olive;
+}
+.caringImgLeft{
+    margin-left: 20px;
+}
+.caringImgRight{
+    margin-right: 20px;
+}
+.farmerCaringImg{
+    height: 500px;
+    border-radius: 20px;
+}
+.subfarmerCaringImg{
+    height: 200px;
+    border-radius: 20px;
+}
+.knowMoreBtn{
+    background-color: olive;
+    border: none;
+    padding: 10px;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+}
+.home2featuresbg{
+    margin-top: 30px;
+    background-color: beige;
+    text-align: center;
+    color: #4CAF50;
+}
+.Home2features{
+    display: flex;
+    gap: 90px;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.featureimg{
+    height: 100px;
+    border-radius: 100px;
+    border: #4CAF50;
+}
+.featureCard2{
+  background-color: white;
+  border-radius: 30px;
+  padding: 10px;
+  margin-left: 55px;
+}
+.green-banner {
+  margin-top: 20px;
+  background-color: #4b7d46;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.text-content h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+.discoverBtn {
+  background: white;
+  color: #4b7d46;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.image-steps {
+  display: flex;
+  margin-top: 40px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.farmerImage {
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+}
+
+.step {
+  background-color: white;
+  color: #4b7d46;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.products-section {
+  background-color: #fdfbf4;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.trust {
+  background-color: white;
+  color: green;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+
+.eco-card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  text-align: center;
+}
+.featuresGrid{
+    display: flex;
+    gap: 40px;
+}
+.featureCard {
+  background: white;
+  padding: 5px;
+  border-radius: 12px;
+  text-align: left;
+}
+
+
+.AboutUsbg{
+    background-color: beige;
+}
+.AboutUslayout{
+    background-image: url('tomatobg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 80vh;
+}
+.AboutUsmainContent{
+    margin-top: 100px;
+    text-align: left;
+    margin-left: 30px;
+    font-size: 200%;
+}
+.aboutUsfeaturesbg{
+    margin-top: 30px;
+    text-align: center;
+    color: olive;
+}
+.aboutUsfeatures{
+    display: flex;
+    gap: 90px;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.aboutUsfeatureCard{
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+    margin-left: 55px;
+}
+.aboutAgri{
+    display: flex;
+    gap: 100px;
+}
+.past{
+    padding: 10px;
+}
+.past h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  color: #4b7d46;
+}
+.historyBtn{
+    margin-top: 20px;
+    background-color: white;
+    border: none;
+    color: #4b7d46;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.past p {
+  max-width: 500px;
+  line-height: 1.5;
+  color: #4b7d46;
+}
+.aboutPast{
+    display: flex;
+    gap: 100px;
+}
+.timeLine{
+    display: flex;
+    gap: 50px;
+    text-align: center;
+}
+.timeLine h1{
+    color: #4b7d46;
+}
+.timeLine p{
+    color: olivedrab;
+}
+.aboutBanner{
+    height: 200px;
+    width: 1100px;
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+    background-image: url(bannerbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    display: flex;
+}
+.aboutBanner h1{
+    margin-top: 50px;
+    margin-left: 40px;
+    color: beige;
+}
+.aboutDiscoverBtn{
+    border: none;
+    color: yellow;
+    background-color: olive;
+    height: 60px;
+    margin-top: 60px;
+    margin-left: 500px;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.feedback{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.feedback h1{
+    color: gray;
+}
+.feedback h5{
+    color: #4b7d46;
+}
+.feedback h6{
+    color: gray;
+}
+.feedbackCards{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-left: 40px;
+    margin-right:50px ;
+}
+.feedbackCard{
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 30px;
+}
+.feedProfile{
+    height: 50px;
+    border-radius: 50px;
+
+}
+.feedDetail{
+    display: flex;
+    gap: 20px;
+}
+.footer{
+    background-color: rgb(194, 194, 81);
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+    color: beige;
+}
+.footerLeft{
+    display: flex;
+    margin-left: 30px;
+    gap: 20px;
+}
+.footerRight{
+    text-align: right;
+    display: flex;
+    gap: 20px;
+    margin-left: 300px;
+}
+.Historybg{
+    background-color: beige;
+}
+.Historylayout{
+    background-image: url('tomatobg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 80vh;
+}
+.HistorymainContent{
+    margin-top: 100px;
+    text-align: left;
+    margin-left: 30px;
+    font-size: 200%;
+}
+.historyAbout{
+    display: flex;
+    gap: 50px;
+}
+.historyAboutText{
+    margin-right: 100px;
+    text-align: center;
+    margin-top: 70px;
+    text-align: left;
+}
+.historyAboutTitle{
+    color: green;
+}
+.teamAbout{
+    margin-top: 50px;
+    margin-left: 100px;
+    gap: 70px;
+}
+.teamImg{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+.card3{
+    display: flex;
+    gap: 70px;
+}
+.nameBtn{
+    border: none;
+    background: none;
+    font-style: italic;
+    cursor: pointer;
+    padding: 1px;
+}
+.nameBtn:hover{
+    transform: scale(1.1);
+}
+.memberOverview{
+    margin-top: 30px;
+    margin-left: 100px;
+    display: flex;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+    margin-right: 100px;
+}
+.overviewText{
+    margin-left: 10px;
+}
+.overviewImg{
+    border-radius: 20px;
+}
+.memberProfDetails{
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.memberProfDetails h4{
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+.memberPersonalInfo{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.generalMemberContent{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.message{
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+#memberMsg{
+    height: 100px;
+    width: 1000px;
+    border-radius: 20px;
+    border: ridge;
+}
+.msgDetails{
+    display: flex;
+    gap: 110px;
+}
+#msgName{
+    width: 440px;
+    height: 50px;
+    border-radius: 20px;
+}
+#msgMail{
+    width: 440px;
+    height: 50px;
+    border-radius: 20px;
+}
+#msgSubject{
+    width: 440px;
+    height: 50px;
+    border-radius: 20px;
+}
+#msgPhone{
+    width: 440px;
+    height: 50px;
+    border-radius: 20px;
+}
+.msgSection{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.msgSubmitBtn{
+    width: 110px;
+    padding: 10px;
+    border: none;
+    background-color: olive;
+    color: yellow;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.msgSubmitBtn:hover{
+    transform: scale(1.1);
+}
+.Servicesbg{
+    background-color:beige;
+}
+.Serviceslayout{
+    background-image: url('tomatobg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 80vh;
+}
+.servicesfeaturesbg{
+    margin-top: 30px;
+    text-align: center;
+    color: olive;
+}
+.servicesfeatures{
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.servicesCard{
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+}
+.servicesimg{
+    height: 100px;
+    border-radius: 30px;
+    border: #4CAF50;
+}
+.portfolioFeaturesbg{
+    margin-top: 50px;
+    margin-left: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.protfolioImg{
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+}
+.portfolioFeatures{
+    display: flex;
+    gap: 20px;
+}
+.Blogbg{
+    background-color:beige;
+}
+.Bloglayout{
+    background-image: url('tomatobg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 80vh;
+}
+.Blogfeaturesbg{
+    margin-top: 30px;
+    text-align: center;
+    color: olive;
+}
+.Blogfeatures{
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.BlogCard{
+    padding: 10px;
+}
+.blogimg{
+    height: 200px;
+    border-radius: 10px;
+    border: #4CAF50;
+}
+.blogHead{
+    color: green;
+}
+.ContactUsbg{
+    background-color:beige;
+}
+.contactMessage{
+    margin-top: 40px;
+    color: gray;
+    margin-left: 20px;
+}
+.ContactUslayout{
+    background-image: url('tomatobg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 80vh;
+}
+.contactFeatures{
+    margin-top: 20px;
+    margin-left: 240px;
+    display: flex;
+    gap: 50px;
+}
+.contactCard{
+    background-color: white;
+    border-radius: 20px;
+    width: 200px;
+    padding: 10px;
+}
+.contactUsDetails{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.ContactmsgSection{
+    display: flex;
+    gap: 20px;
+    background-color: white;
+    border-radius: 10px;
+    width: 700px;
+    height: 320px;
+    margin-left: 250px;
+}
+.ContactmsgDetails{
+    display: flex;
+    gap: 20px;
+}
+#contactMsg{
+    width: 350px;
+    height: 100px;
+    border-radius: 20px;
+    border: solid;
+    border-color: gray;
+}
+.contactImg{
+    height: 320px;
+    width: 300px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.contactMsgSubmitBtn{
+    background-color: olive;
+    border: none;
+    width: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    color: yellow;
+    cursor: pointer;
+}
+.contactMsgSubmitBtn:hover{
+    transform: scale(1.1);
+}
+.adminPanel{
+    background-color: olive;
+    border: none;
+    border-radius: 20px;
+    color: yellow;
+    padding: 6px;
+    cursor: pointer;
+    width: 110px;
+}
+#contactName{
+    height: 40px;
+    border-radius: 20px;
+    border: solid;
+    border-color: gray;
+}
+#contactMail{
+    height: 40px;
+    border-radius: 20px;
+    border: solid;
+    border-color: gray;
+}
+#contactSubject{
+    height: 40px;
+    border-radius: 20px;
+    border: solid;
+    border-color: gray;
+}
+#contactPhone{
+    height: 40px;
+    border-radius: 20px;
+    border: solid;
+    border-color: gray;
+}
+.footerContentBg{
+    background-color: white;
+}
+.footerContent{
+    margin-left: 70px;
+    text-align: left;
+    display: flex;
+    gap: 100px;
+    margin-right: 50px;
+}
+.footerContentLeft{
+    margin-top: 30px;
+}
+.footerContentRight{
+    margin-top: 20px;
+}
+.footerContentRightSub{
+    display: flex;
+    gap: 30px;
+}
+.footerContentRight h2{
+    color: gray;
+}
+
+
+@media (max-width: 600px) {
+    .bg{
+        width: 180vh;
+    }
+    .layout{
+    width: 100%;
+    height: 300px;
+    }
+    .topBar{
+        width: 10%;
+        display: flex;
+        flex-direction: row;
+    }
+    .navBar{
+        display: flex;
+        flex-direction: row;
+        margin-left: 10px;
+    }
+    .contact{
+        margin-left: 900px;
+    }
+    .mainContent{
+        margin-top: 30px;
+    }
+    .features{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+    .farmerImg{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .aboutText{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .servicesTop{
+        display: flex;
+    }
+    .buttons{
+        display: flex;
+    }
+    .servicesCards{
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        margin-right: 30px;
+        gap: 10px;
+    }
+    .productsContent{
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        margin-right: 50px;
+        gap: 10px;
+    }
+    .feedbackCards{
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+    }
+    .feedbackCard{
+        margin-left: 10px;
+        margin-right: 40px;
+    }
+    .feedback{
+        text-align: center;
+    }
+    .Home2bg{
+        width:180vh;
+        height: max-content;
+    }
+    .contact{
+        margin-right: 5px;
+    }
+    .Home2features{
+        margin-left: 150px;
+    }
+    .text-content{
+        margin-left: 150px;
+    }
+    .image-steps{
+        margin-left: 150px;
+    }
+    .AboutUsbg{
+        width: 180vh;
+    }
+    .farmerImg{
+        width: 100vh;
+        margin-left: 350px;
+    }
+    .aboutPara{
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+    .aboutHighlight{
+        margin-left: 750px;
+    }
+    .aboutUsfeatures{
+        margin-left: 150px;
+    }
+    .past{
+        margin-left: 150px;
+    }
+    .aboutBanner{
+        margin-left: 300px;
+    }
+    .Historybg{
+        width: 180vh;
+    }
+    .teamAbout{
+        margin-left: 300px;
+    }
+    .message{
+        align-items: center;
+    }
+    .Servicesbg{
+        width: 180vh;
+    }
+    .Blogbg{
+        width: 180vh;
+    }
+    .ContactUsbg{
+        width: 180vh;
+    }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+    .bg{
+        width: 180%;
+    }
+    .layout{
+    width: 100%;
+    }
+    .Home2bg{
+        width: 180%;
+    }
+    .Home2features{
+        margin-right: 10px;
+    }
+    .AboutUsbg{
+        width: 180%;
+    }
+    .Historybg{
+        width: 180%;
+    }
+    .teamAbout{
+        margin-left: 60px;
+    }
+    .message{
+        align-items: center;
+    }
+    .Servicesbg{
+        width: 180%;
+    }
+    .Blogbg{
+        width: 180%;
+    }
+    .ContactUsbg{
+        width: 180%;
+    }
+    .contactFeatures{
+        margin-left: 180px;
+    }
+    .ContactmsgSection{
+        margin-left: 180px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px){
+    .Home2bg{
+        width: 200%;
+    }
+    .Home2features{
+        margin-left: 150px;
+    }
+    .AboutUsbg{
+        width: 200%;
+    }
+    .aboutUsfeatures{
+        margin-left: 180px;
+    }
+    .text-content{
+        margin-left: 180px;
+    }
+    .image-steps{
+        margin-left: 180px;
+    }
+    .past{
+        margin-left: 180px;
+    }
+    .aboutBanner{
+        margin-left: 230px;
+    }
+    .feedback{
+        margin-left: 180px;
+    }
+    .Historybg{
+        width: 200%;
+    }
+    .teamAbout{
+        margin-left: 400px;
+    }
+    .message{
+        align-items: center;
+    }
+    .Servicesbg{
+        width: 200%;
+    }
+    .Blogbg{
+        width: 200%;
+    }
+    .ContactUsbg{
+        width: 200%;
+    }
+    .contactFeatures{
+        margin-left: 500px;
+    }
+    .ContactmsgSection{
+        margin-left: 500px;
+    }
+    .contactMessage h1{
+        margin-left: 50px;
+    }
+}
+
+.adminBg {
+    padding: 10px;
+}
+
+.loading, .error, .no-messages {
+    text-align: center;
+    padding: 40px;
+}
+.messagesList {
+    display: grid;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.messageCard {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: gray;
+    color: white;
+}
+
+.messageCard p {
+    margin: 10px;
+}
+
+
+.productsBg{
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.productsBg h1{
+    text-align: center;
+}
+.productList{
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+}
+.productCard{
+    padding: 15px;
+    border-radius: 10px;
+    background-color: gray;
+    color: white;
+    width: 200px;
+    border: none;
+    cursor: pointer;
+}
+.productCard:hover{
+    transform: scale(1.1);
+}
+
+.adminControlsBg{
+    background-color: olive;
+    height: 100vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+.AdminMessages{
+    border: none;
+    background-color: white;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.AdminAddProducts{
+    border: none;
+    background-color: white;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.home{
+    border: none;
+    background-color: white;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.prodAddBg{
+    background-color: olive;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+#prodName{
+    padding: 10px;
+    border-radius: 10px;
+    border: solid;
+    border-color: olive;
+}
+#prodCost{
+    padding: 10px;
+    border-radius: 10px;
+    border: solid;
+    border-color: olive;
+}
+#prodQty{
+    padding: 10px;
+    border-radius: 10px;
+    border: solid;
+    border-color: olive;
+}
+.prodAddBtn{
+    padding: 10px;
+    border: solid;
+    border-color: olive;
+    background-color: white;
+    color: olive;
+    border-radius: 20px;
+    cursor: pointer;
 }

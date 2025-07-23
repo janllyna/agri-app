@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
+import MainApp from './App';
 import Home2 from './Home2';
-import AboutUs from './AboutUs';
 import History from './History';
 import './style.css';
 import Team from './Team';
@@ -10,14 +10,8 @@ import Services from './Services';
 import Portfolio from './Portfolio';
 import Blog from './Blog';
 import ContactUs from './ContactUs';
-import AdminPanel from './AdminPanel';
-import AdminAddProd from './AdminAddProd';
-import Products from './Products';
-import AdminLogin from './AdminLogin';
-import AdminSignUp from './AdminSignUp';
-import AdminControls from './AdminControls';
 
-const MainApp = () => {
+const AboutUs = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const navigate = useNavigate();
 
@@ -32,8 +26,8 @@ const MainApp = () => {
   };
 
   return (
-    <div className='bg'>
-      <div className='layout'>
+    <div className='AboutUsbg'>
+      <div className='AboutUslayout'>
         <div className='topBar'>
           <div className='logo'>
             <img src={require('./logo.jpg')} className='logoImg' alt='Logo' />
@@ -66,8 +60,6 @@ const MainApp = () => {
             <button onClick={()=> navigate('/portfolio')} className='navButton'>Portfolio</button>
             <button onClick={()=> navigate('/blog')} className='navButton'>Blog</button>
             <button onClick={()=> navigate('/contactus')} className='navButton'>Contact Us</button>
-            <button onClick={()=>navigate('/products')} className='navButton'>Products</button>
-            <button onClick={()=> navigate('/adminlogin')} className='navButton'>Admin Login</button>
           </div>
           <div className='contact'>
             <button className='call'>Call us</button>
@@ -79,38 +71,12 @@ const MainApp = () => {
             <button className='touch'>Get in Touch</button>
           </div>
         </div>
-
-        <div className='mainContent'>
-          <button className='smallTag'>Believe In Quality!</button>
-          <h1 className='ContactmsgDe'>
-            Quality Trust:
-            <br />
-            Direct to the Farm
+        <div className='AboutUsmainContent'>
+          <h1 className='tagLine'>
+            About Us
           </h1>
-          <p className='subTag'>
-            We all need a little space to grow. Give yourself the space you need to find your inner you.
-          </p>
         </div>
       </div>
-      <div className='features'>
-        <div className='featureCard'>
-          <h4 className='featureHead'>Professional Farmers</h4>
-          <p className='featureDesc'>Nullam porta enim vel tellus commodo,eget laoreet odio ultrices.</p>
-        </div>
-        <div className='featureCard'>
-          <h4 className='featureHead'>Fresh Vegetables</h4>
-          <p className='featureDesc'>Nullam porta enim vel tellus commodo,eget laoreet odio ultrices.</p>
-        </div>
-        <div className='featureCard'>
-          <h4 className='featureHead'>Agricultural Products</h4>
-          <p className='featureDesc'>Nullam porta enim vel tellus commodo,eget laoreet odio ultrices.</p>
-        </div>
-        <div className='featureCard'>
-          <h4 className='featureHead'>100% Guaranteed</h4>
-          <p className='featureDesc'>Nullam porta enim vel tellus commodo,eget laoreet odio ultrices.</p>
-        </div>
-      </div>
-
       <div className='about'>
         <img src={require('./farmer.jpg')} className='farmerImg' alt='Farmer' />
         <div className='aboutText'>
@@ -126,61 +92,103 @@ const MainApp = () => {
           </div>
         </div>
       </div>
-
-      <div className='services'>
-        <div className='servicesTop'>
-          <h1 className='servicesTitle'>Best Agriculture Services</h1>
-          <div className='buttons'>
-            <button type='button' className='servicesButton'>⬅️</button>
-            <button type='button' className='servicesButton'>➡️</button>
+      <div className='aboutUsfeaturesbg'>
+        <h1>Best Agriculture Services</h1>
+        <div className='aboutUsfeatures'>
+          <div className='aboutUsfeatureCard'>
+            <img src={require('./feature1.jpg')} className='featureimg' alt='harvest' />
+            <h4 className='featureHead'>Professional Farmers</h4>
           </div>
-        </div>
-        <div className='servicesCards'>
-          <div className='services1'>
-            <img src={require('./services1.jpg')} className='servicesImg' alt='Services' />
-            <h4 className='serviceCardText'>Harvest Concepts</h4>
-            <p className='serviceCardContent'>Farming and animal husbandry and discuss with farmers and scientists.</p>
+          <div className='aboutUsfeatureCard'>
+            <img src={require('./feature2.jpg')} className='featureimg' alt='harvest' />
+            <h4 className='featureHead'>Fresh Vegetables</h4>
           </div>
-          <div className='services2'>
-            <img src={require('./services2.jpg')} className='servicesImg' alt='Services' />
-            <h4 className='serviceCardText'>Farming Products</h4>
-            <p className='serviceCardContent'>Farming and animal husbandry and discuss with farmers and scientists.</p>
+          <div className='aboutUsfeatureCard'>
+            <img src={require('./feature3.jpg')} className='featureimg' alt='harvest' />
+            <h4 className='featureHead'>Agricultural Products</h4>
           </div>
-          <div className='services3'>
-            <img src={require('./services3.jpg')} className='servicesImg' alt='Services' />
-            <h4 className='serviceCardText'>Soil Fertilization</h4>
-            <p className='serviceCardContent'>Farming and animal husbandry and discuss with farmers and scientists.</p>
+          <div className='aboutUsfeatureCard'>
+            <img src={require('./feature4.jpg')} className='featureimg' alt='harvest' />
+            <h4 className='featureHead'>100% Guaranteed</h4>
           </div>
         </div>
       </div>
-
-      <div className='products'>
-        <h1 className='productsTitle'>Choose What's Perfect For Your Field</h1>
-        <div className='productsContent'>
-          <div className='productCardleft'>
-            <div className='agriProd'>
-              <h4 className='agriProdTitle'>Agricultural Products</h4>
-              <p className='agriProdCont'>Nullam porta enim vel tellus commodo, eget laoreet odio ultrices.</p>
-            </div>
-            <div className='qualityProd'>
-              <h4 className='qualityProdTitle'>Agricultural Products</h4>
-              <p className='qualityProdCont'>Nullam porta enim vel tellus commodo, eget laoreet odio ultrices.</p>
+      <div className="eco-section">
+        <div className="green-banner">
+          <div className="text-content">
+            <button className="discoverBtn">Discover About Us</button>
+            <div className='aboutAgri'>
+              <h2>Agriculture matters to the<br />future of development</h2>
+              <p>
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even.
+              </p>
             </div>
           </div>
-          <img src={require('./corn.png')} className='cornImg' alt='corn' />
-          <div className='productCardRight'>
-            <div className='vegProd'>
-              <h4 className='vegProdTitle'>Fresh Vegetables</h4>
-              <p className='vegProdCont'>Nullam porta enim vel tellus commodo, eget laoreet odio ultrices.</p>
-            </div>
-            <div className='pureProd'>
-              <h4 className='pureProdTitle'>Pure & Organic</h4>
-              <p className='pureProdCont'>Nullam porta enim vel tellus commodo, eget laoreet odio ultrices.</p>
+
+          <div className="image-steps">
+            <img src={require('./farmer.jpg')} alt="Farmer Talk" className="farmerImage" />
+            <div className="steps">
+              <div className="step"><span>01</span> Schedule Your Experience <span>Quisqu tell us risus adpis viera
+bibe um urna.</span></div>
+              <div className="step"><span>02</span> Get Professional Advice <span>Quisqu tell us risus adpis viera
+bibe um urna.</span></div>
+              <div className="step"><span>03</span> Meet Our Expert Farmer <span>Quisqu tell us risus adpis viera
+bibe um urna.</span></div>
+              <div className="step"><span>04</span> Now Get A Best Products <span>Quisqu tell us risus adpis viera
+bibe um urna.</span></div>
             </div>
           </div>
         </div>
       </div>
-
+      <div className="past">
+        <button className="historyBtn">Our History</button>
+        <div className='aboutPast'>
+          <h2>Farming have been since<br/> 1866</h2>
+          <p>
+          There are many variations of passages of Lorem Ipsum available,
+          but the majority have suffered alteration in some form, by
+          injected humour, or randomised words which don't look even.
+          </p>
+        </div>
+      </div>
+      <div className='timeLine'>
+        <div className='timeLineCard'>
+          <h1>1987</h1>
+          <h5>Open My Farm</h5>
+          <p>Corrupti ut consequatur magni minus!
+Iusto eos consectetur similique minus
+culpa odio temporibus.</p>
+        </div>
+        <div className='timeLineCard'>
+          <h1>1910</h1>
+          <h5>Farm Remodelacion</h5>
+          <p>Corrupti ut consequatur magni minus!
+Iusto eos consectetur similique minus
+culpa odio temporibus.</p>
+        </div>
+        <div className='timeLineCard'>
+          <h1>1995</h1>
+          <h5>Grainfarmers Formed</h5>
+          <p>Corrupti ut consequatur magni minus!
+Iusto eos consectetur similique minus
+culpa odio temporibus.</p>
+        </div>
+        <div className='timeLineCard'>
+          <h1>2000</h1>
+          <h5>Start of Agriculture</h5>
+          <p>Corrupti ut consequatur magni minus!
+Iusto eos consectetur similique minus
+culpa odio temporibus.</p>
+        </div>
+      </div>
+      <div className='aboutBanner'>
+        <h1>We’re popular leader in
+        <br/>
+        agriculture market globally</h1>
+        <button className='aboutDiscoverBtn'>Discover More</button>
+      </div>
       <div className='feedback'>
         <h1>What Our Customers Say</h1>
         <div className='feedbackCards'>
@@ -209,7 +217,6 @@ const MainApp = () => {
             <div className='feedDetail'>
               <img src={require('./profile.jpg')} className='feedProfile' alt='Profile' />
               <div className='feedName'>
-                
                 <h5>
               Daniel Craig
             </h5>
@@ -291,14 +298,8 @@ const App = () => {
       <Route path='/portfolio' element={<Portfolio/>}/>
       <Route path='/blog' element={<Blog/>}/>
       <Route path='/contactus' element={<ContactUs/>}/>
-      <Route path='/adminpanel' element={<AdminPanel/>}/>
-      <Route path='/adminaddpanel' element={<AdminAddProd/>}/>
-      <Route path='/products' element={<Products/>}/>
-      <Route path='/adminlogin' element={<AdminLogin/>}/>
-      <Route path='/adminsignup' element={<AdminSignUp/>}/>
-      <Route path='/admincontrols' element={<AdminControls/>}/>
     </Routes>
   );
 };
 
-export default App;
+export default AboutUs;
